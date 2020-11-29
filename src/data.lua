@@ -15,11 +15,15 @@ end
 if mods["railloader"] then
 	local railunloaderChestEntity = data.raw["container"]["railunloader-chest"]
 	railunloaderChestEntity.inventory_size = 500 --320
-end 
+end
+
+--COMPATIBILITY 1.1.0 rename "layer-11" to "rail-layer"
+local signpostEntity_collision_mask = "rail-layer"
+if Version.compare(mods["base"],"1.1.0") < 0 then signpostEntity_collision_mask = "layer-11" end
 
 if mods["attach-notes"] then
 	local signpostEntity = data.raw["storage-tank"]["signpost"]
-	signpostEntity.collision_mask =  {"layer-11"} --???
+	signpostEntity.collision_mask =  {signpostEntity_collision_mask}	
 	--signpostEntity.collision_box = {{0, 0}, {0, 0}} --{{-0.2, -0.2}, {0.2, 0.2}}
 	signpostEntity.selection_box = {{-0.5, -0.5}, {0.5, 0.2}} --{{-0.5, -0.5}, {0.5, 0.5}}
 end
@@ -31,6 +35,7 @@ data.raw["offshore-pump"]["offshore-pump"].adjacent_tile_collision_test = { "wat
 data.raw["offshore-pump"]["offshore-pump"].adjacent_tile_collision_mask = { "item-layer", "object-layer", "player-layer", "water-tile"}
 data.raw["offshore-pump"]["offshore-pump"].fluid_box_tile_collision_test = { "water-tile", "ground-tile", "floor-layer" }
 
+--[[
 -- https://wiki.factorio.com/Prototype/Recipe
 data:extend{
 	{
@@ -74,3 +79,4 @@ data:extend{
 		hide_from_player_crafting = true
     },
 }
+]]
