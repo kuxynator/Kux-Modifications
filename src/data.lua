@@ -1,39 +1,7 @@
-
-if mods["advanced-combinator"] then
-	local advancedCombinatorRecipe = data.raw.recipe["advanced-combinator"]
-	advancedCombinatorRecipe.ingredients = {
-		{ "constant-combinator", 1 },
-		{ "arithmetic-combinator", 1 },
-		{ "green-wire", 1 },
-		{ "red-wire", 1 }
-	}
-	local advancedCombinatorEntity = data.raw["constant-combinator"]["advanced-combinator"]
-	advancedCombinatorEntity.active_energy_usage = "50KW" --500KW
-	advancedCombinatorEntity.circuit_wire_max_distance = 32
-end
-
-if mods["railloader"] then
-	local railunloaderChestEntity = data.raw["container"]["railunloader-chest"]
-	railunloaderChestEntity.inventory_size = 500 --320
-end
-
---COMPATIBILITY 1.1.0 rename "layer-11" to "rail-layer"
-local signpostEntity_collision_mask = "rail-layer"
-if Version.compare(mods["base"],"1.1.0") < 0 then signpostEntity_collision_mask = "layer-11" end
-
-if mods["attach-notes"] then
-	local signpostEntity = data.raw["storage-tank"]["signpost"]
-	signpostEntity.collision_mask =  {signpostEntity_collision_mask}	
-	--signpostEntity.collision_box = {{0, 0}, {0, 0}} --{{-0.2, -0.2}, {0.2, 0.2}}
-	signpostEntity.selection_box = {{-0.5, -0.5}, {0.5, 0.2}} --{{-0.5, -0.5}, {0.5, 0.5}}
-end
-
--- copy from PlacePump
-data.raw["offshore-pump"]["offshore-pump"].placeable_position_visualization = nil
-data.raw["offshore-pump"]["offshore-pump"].flags = {"placeable-neutral", "player-creation"}
-data.raw["offshore-pump"]["offshore-pump"].adjacent_tile_collision_test = { "water-tile", "ground-tile", "floor-layer" }
-data.raw["offshore-pump"]["offshore-pump"].adjacent_tile_collision_mask = { "item-layer", "object-layer", "player-layer", "water-tile"}
-data.raw["offshore-pump"]["offshore-pump"].fluid_box_tile_collision_test = { "water-tile", "ground-tile", "floor-layer" }
+require "features.advancedCombinator"
+require "features.railloaderInventorySize"
+require "features.attachNotesSignPost"
+require "features.landPump"
 
 --[[
 -- https://wiki.factorio.com/Prototype/Recipe

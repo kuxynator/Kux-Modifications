@@ -1,0 +1,23 @@
+{
+	"name": "Kux-Modifications",
+	"version": "2.1.1",
+	"title": "Kuxynator's Modifications",
+	"author": "Kuxynator",	
+	"homepage": "https://fb.me/kuxynator.factorio",
+	"factorio_version": "1.1",
+	"dependencies": [
+		"base",
+		"? railloader",
+		"? advanced-combinator",
+		"? attach-notes",
+		"? deadlock_stacked_recipes",
+		"? Kux-Deadlock-Stacking-Bio_Industries",
+		"? DeadlockStackingForVanilla",
+		"? DeadlockStackingForKrastorio2",
+		"? Deadlock-SE-bridge",
+		"? Krastorio2",
+		"? robot_attrition",
+		"! PlacePump"
+	],
+	"description": "Personal Modifications."
+}

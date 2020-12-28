@@ -1,5 +1,8 @@
+-- Version utility
+-- Changed: 2020-11-30
+
 local splitString = function (text)
-	local list = {}; local pos = 1	
+	local list = {}; local pos = 1
 	while 1 do
 		local first, last = string.find(text, "%.", pos)
 		if first then
@@ -15,9 +18,9 @@ local splitString = function (text)
 	return list
 end
 
-Version = {}
+local version = {}
 
-Version.compare = function (versionA, versionB)
+version.compare = function (versionA, versionB)
 	local a = splitString(versionA)
 	local b = splitString(versionB)
 	for i = 1, 3, 1 do
@@ -30,6 +33,9 @@ Version.compare = function (versionA, versionB)
 	end
 	return 0
 end
+
+Version = version -- make global available
+return version
 
 --[[ Tests
 print(Version.compare("1.0.0","1.0.0"))
