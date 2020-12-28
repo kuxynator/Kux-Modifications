@@ -4,6 +4,8 @@
 		"script",
 		"game",
 		"data",
-		"mods"
+		"mods",
+		"remote",
+		"serpent"
 	]
 }

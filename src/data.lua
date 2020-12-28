@@ -2,6 +2,7 @@ require "features.advancedCombinator"
 require "features.railloaderInventorySize"
 require "features.attachNotesSignPost"
 require "features.landPump"
+require "features.fasterStartItems"
 
 --[[
 -- https://wiki.factorio.com/Prototype/Recipe
