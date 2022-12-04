@@ -6,6 +6,9 @@
 		"data",
 		"mods",
 		"remote",
-		"serpent"
+		"serpent",
+		"global",
+		"defines",
+		"log"
 	]
 }

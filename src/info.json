@@ -1,10 +1,10 @@
 {
 	"name": "Kux-Modifications",
-	"version": "2.2.0",
+	"version": "2.3.1",
+	"factorio_version": "1.1",
 	"title": "Kuxynator's Modifications",
 	"author": "Kuxynator",	
-	"homepage": "https://fb.me/kuxynator.factorio",
-	"factorio_version": "1.1",
+	"homepage": "https://fb.me/kuxynator.factorio",	
 	"dependencies": [
 		"base",
 		"? railloader",
@@ -19,7 +19,16 @@
 		"? Krastorio2",
 		"? robot_attrition",
 		"! PlacePump",
-		"? AEAA593E-CC01-490C-BFB5-DE8E5023B5A6"
+		"? AEAA593E-CC01-490C-BFB5-DE8E5023B5A6",
+		"? JunkTrain3",
+		"? Kux-LogisticsCenterCS",
+		"? Surfaces_Reloaded",
+		"? SchallLampContrast",
+		"? homeworld_redux",
+		"? Bio_Industries",
+		"? nullius",
+		"? assembler-pipe-passthrough",
+		"? Transport_Drones"
 	],
 	"description": "Kuxynator's personal modifications."
 }

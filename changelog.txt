@@ -1,0 +1,100 @@
+---------------------------------------------------------------------------------------------------
+Version: 2.3.1
+Date: 2022-12-04
+  Changes:
+    - add Mining_Drones to assembler-pipe-passthrough blacklist 
+---------------------------------------------------------------------------------------------------
+Version: 2.3.0
+Date: 2022-12-04
+  Changes:
+    - add Transport_Drones to assembler-pipe-passthrough blacklist 
+    - add locale EN for settings
+---------------------------------------------------------------------------------------------------
+Version: 2.2.9
+Date: 2021-04-04
+  Changes:
+    - character hover (optional)
+---------------------------------------------------------------------------------------------------
+Version: 2.2.9
+Date: 2021-03-25
+  Changes:
+    - Space Exploration: se-core-miner-drill
+    - logisticRobotEntity.max_payload_size = 10. 100 was too much, if only few resources was requested
+---------------------------------------------------------------------------------------------------
+Version: 2.2.8
+Date: 2021-03-22
+  Changes:
+    - more slots for constant combinator
+    - force minimum 5 roboport slots
+    - set 'character_loot_pickup_distance_bonus = 320' removed, slow dowwns the game
+---------------------------------------------------------------------------------------------------
+Version: 2.2.7
+Date: 2021-03-08
+  Changes:
+    - admin cheats
+      - set 'character_item_pickup_distance_bonus = 320' removed, slow dowwns the game
+    - Space Exploration
+        - deliveryCannonChest.inventory_size = 100
+---------------------------------------------------------------------------------------------------
+Version: 2.2.6
+Date: 2021-02-10
+  Changes:
+    - admin cheats (enable/disable in mod settings)
+---------------------------------------------------------------------------------------------------
+Version: 2.2.5
+Date: 2021-02-07
+  Changes:
+    - make sawmill faster
+    - make arboratum faster
+---------------------------------------------------------------------------------------------------
+Version: 2.2.4
+Date: 2021-02-05
+  Changes:
+    - RoboportLogisticsRadius: set default value to 0 (feature off)
+  Bugfixes:
+    - Pump on land
+---------------------------------------------------------------------------------------------------
+Version: 2.2.3
+Date: 2021-02-05
+  Changes:
+    - settings for some features (default: feature is off)
+---------------------------------------------------------------------------------------------------
+Version: 2.2.1
+Date: 2021-01-20
+  Features:
+    - add items for a faster server start
+---------------------------------------------------------------------------------------------------
+Version: 2.2.0
+Date: 2020-12-28
+  Features:
+    - add items for a faster start
+---------------------------------------------------------------------------------------------------
+Version: 2.1.0
+Date: 2020-08-10
+---------------------------------------------------------------------------------------------------
+Version: 1.1.1
+Date: 2020-12-10
+---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 2020-11-29
+  Features:
+    - underground length
+  Changes:
+    - Compatibility for Factorio 1.1.x
+  Optimizations:
+    - split features into files
+    - code refactoring  
+---------------------------------------------------------------------------------------------------
+Version: 2.0.0
+Date: 2020-11-26
+  Info:
+    - v2.x.x scheme for Factorio 1.1.x
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2020-11-14
+  Info:
+    - firt public version
+  Locale:
+    - English
+  License:
+    - MIT

@@ -1,4 +1,4 @@
-local undergroundLength = 255 --TODO create configuration
+local undergroundLength
 
 local function getUntergroundPipes()
 	local prototypes = {}
@@ -11,7 +11,7 @@ local function getUntergroundPipes()
 				table.insert(prototypes, prototype)
 			end
 		end
-	end	
+	end
 	return prototypes
 end
 
@@ -40,5 +40,8 @@ local function modifyUndergroundBelts()
 	end
 end
 
-modifyUndergroundPipes()
-modifyUndergroundBelts()
+if settings.startup["Kux-Modifications-UndergroundLength"].value > 0 then
+	undergroundLength = settings.startup["Kux-Modifications-UndergroundLength"].value
+	modifyUndergroundPipes()
+	modifyUndergroundBelts()
+end
